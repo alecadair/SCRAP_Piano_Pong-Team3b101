@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/Users/u0725062/Desktop/NEWPROJECTFINAL/latestversion/alu_reg_mem_pc/Game.v" Line 39: Redeclaration of ansi port <arg fmt="%s" index="1">midiNoteWire</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/Users/u0725062/Desktop/NEWPROJECTFINAL/latestversion/alu_reg_mem_pc/Game.v" Line 43: Redeclaration of ansi port <arg fmt="%s" index="1">noteForMem</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/u0725062/Desktop/NEWPROJECTFINAL/latestversion/alu_reg_mem_pc/GameSim.v" Line 41: Port <arg fmt="%s" index="1">note0timerOn</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/u0725062/Desktop/NEWPROJECTFINAL/latestversion/alu_reg_mem_pc/VGA_Module.v" Line 96: Port <arg fmt="%s" index="1">noteCheckReg</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/u0725062/Desktop/NEWPROJECTFINAL/latestversion/alu_reg_mem_pc/Game.v" Line 94: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">din</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/u0725062/Desktop/NEWPROJECTFINAL/latestversion/alu_reg_mem_pc/Game.v" Line 97: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addrA</arg>&gt;. Formal port size is <arg fmt="%d" index="2">14</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/u0725062/Desktop/NEWPROJECTFINAL/latestversion/alu_reg_mem_pc/Game.v" Line 98: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">doutA</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+</messages>
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.ncd
+OUTFILE=C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc
+LICENSE=WebPack
+USER_INFO=176175080_0_0_415

@@ -1,0 +1,78 @@
+
+
+NET "rgb[7]" IOSTANDARD = LVCMOS33;
+NET "rgb[6]" IOSTANDARD = LVCMOS33;
+NET "rgb[5]" IOSTANDARD = LVCMOS33;
+NET "rgb[4]" IOSTANDARD = LVCMOS33;
+NET "rgb[3]" IOSTANDARD = LVCMOS33;
+NET "rgb[2]" IOSTANDARD = LVCMOS33;
+NET "rgb[1]" IOSTANDARD = LVCMOS33;
+NET "rgb[0]" IOSTANDARD = LVCMOS33;
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "hs" IOSTANDARD = LVCMOS33;
+NET "vs" IOSTANDARD = LVCMOS33;
+
+NET "digit[0]" IOSTANDARD = LVCMOS33;
+NET "digit[1]" IOSTANDARD = LVCMOS33;
+NET "digit[2]" IOSTANDARD = LVCMOS33;
+NET "digit[3]" IOSTANDARD = LVCMOS33;
+NET "digit[4]" IOSTANDARD = LVCMOS33;
+NET "digit[5]" IOSTANDARD = LVCMOS33;
+NET "digit[6]" IOSTANDARD = LVCMOS33;
+NET "digit[7]" IOSTANDARD = LVCMOS33;
+NET "segment[0]" IOSTANDARD = LVCMOS33;
+NET "segment[1]" IOSTANDARD = LVCMOS33;
+NET "segment[2]" IOSTANDARD = LVCMOS33;
+NET "segment[3]" IOSTANDARD = LVCMOS33;
+
+
+NET "digit[0]" LOC = L14;
+NET "digit[1]" LOC = N14;
+NET "digit[2]" LOC = M14;
+NET "digit[3]" LOC = U18;
+NET "digit[4]" LOC = U17;
+NET "digit[5]" LOC = T18;
+NET "digit[7]" LOC = M13;
+NET "digit[6]" LOC = T17;
+NET "segment[0]" LOC = N16;
+NET "segment[1]" LOC = N15;
+NET "segment[2]" LOC = P18;
+NET "segment[3]" LOC = P17;
+
+
+
+
+
+NET "clk" LOC = V10;
+NET "hs" LOC = N6;
+NET "vs" LOC = P7;
+NET "rgb[7]" LOC = U7;
+NET "rgb[6]" LOC = V7;
+NET "rgb[5]" LOC = N7;
+NET "rgb[4]" LOC = P8;
+NET "rgb[3]" LOC = T6;
+NET "rgb[2]" LOC = V6;
+NET "rgb[1]" LOC = R7;
+NET "rgb[0]" LOC = T7;
+
+# PlanAhead Generated IO constraints 
+
+NET "rgbSwitch[7]" IOSTANDARD = LVCMOS33;
+NET "rgbSwitch[6]" IOSTANDARD = LVCMOS33;
+NET "rgbSwitch[5]" IOSTANDARD = LVCMOS33;
+NET "rgbSwitch[4]" IOSTANDARD = LVCMOS33;
+NET "rgbSwitch[3]" IOSTANDARD = LVCMOS33;
+NET "rgbSwitch[2]" IOSTANDARD = LVCMOS33;
+NET "rgbSwitch[1]" IOSTANDARD = LVCMOS33;
+NET "rgbSwitch[0]" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "rgbSwitch[7]" LOC = T5;
+NET "rgbSwitch[6]" LOC = V8;
+NET "rgbSwitch[5]" LOC = U8;
+NET "rgbSwitch[4]" LOC = N8;
+NET "rgbSwitch[3]" LOC = M8;
+NET "rgbSwitch[2]" LOC = V9;
+NET "rgbSwitch[1]" LOC = T9;
+NET "rgbSwitch[0]" LOC = T10;

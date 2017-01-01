@@ -1,0 +1,1443 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Game.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Game.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Game"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Game
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\HardwareTimer.v" into library work
+Parsing module <HardwareTimer>.
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\vga_timing.v" into library work
+Parsing module <vga_timing>.
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" into library work
+Parsing module <TugOfWar>.
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\scoreKeeper.v" into library work
+Parsing module <scoreKeeper>.
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" into library work
+Parsing module <noteGlyphManager>.
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\bitGen.v" into library work
+Parsing module <bitGen>.
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\midiInput.v" into library work
+Parsing module <midiInput>.
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\memory.v" into library work
+Parsing module <memory>.
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\LEDdriver.v" into library work
+Parsing module <LEDdriver>.
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" into library work
+Parsing module <VGA_Module>.
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\midiMemMan.v" into library work
+Parsing module <midiMemMan>.
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\ipcore_dir\pixelClock.v" into library work
+Parsing module <pixelClock>.
+Analyzing Verilog file "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" into library work
+Parsing module <Game>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Game>.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 56: Signal <p1turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 59: Signal <p2turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:1127 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 55: Assignment to p1orp2turn ignored, since the identifier is never used
+
+Elaborating module <midiInput>.
+
+Elaborating module <pixelClock>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <PLL_BASE(BANDWIDTH="OPTIMIZED",CLK_FEEDBACK="CLKFBOUT",COMPENSATION="SYSTEM_SYNCHRONOUS",DIVCLK_DIVIDE=1,CLKFBOUT_MULT=4,CLKFBOUT_PHASE=0.0,CLKOUT0_DIVIDE=16,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT1_DIVIDE=4,CLKOUT1_PHASE=0.0,CLKOUT1_DUTY_CYCLE=0.5,CLKIN_PERIOD=10.0,REF_JITTER=0.01)>.
+WARNING:HDLCompiler:1127 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\ipcore_dir\pixelClock.v" Line 119: Assignment to clkout2_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\ipcore_dir\pixelClock.v" Line 120: Assignment to clkout3_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\ipcore_dir\pixelClock.v" Line 121: Assignment to clkout4_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\ipcore_dir\pixelClock.v" Line 122: Assignment to clkout5_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\ipcore_dir\pixelClock.v" Line 123: Assignment to locked_unused ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+WARNING:HDLCompiler:1016 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" Line 96: Port noteCheckReg is not connected to this instance
+
+Elaborating module <VGA_Module>.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" Line 60: Signal <nextBackgroundColor> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" Line 61: Signal <backgroundColor> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" Line 63: Signal <backgroundColor> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" Line 64: Signal <backgroundColor> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" Line 67: Signal <backgroundColor> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" Line 69: Signal <backgroundColor> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <vga_timing>.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\vga_timing.v" Line 50: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\vga_timing.v" Line 55: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\vga_timing.v" Line 64: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\vga_timing.v" Line 74: Result of 32-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <bitGen>.
+
+Elaborating module <noteGlyphManager>.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 92: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 93: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 114: Signal <thisManagersNote> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 121: Signal <thisManagersNote> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 345: Signal <yOffset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 345: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 346: Signal <xOffset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 346: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 394: Signal <xOffset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 395: Signal <xOffset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 406: Signal <yOffset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 407: Signal <yOffset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 418: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 438: Signal <timerOn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 621: Signal <correctNote> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 622: Signal <p1Miss> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 623: Signal <p2Miss> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 626: Signal <p2turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 627: Signal <thisManagersNote> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 641: Signal <p1turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 642: Signal <thisManagersNote> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <HardwareTimer>.
+WARNING:HDLCompiler:1127 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" Line 688: Assignment to EndTimer ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" Line 104: Size mismatch in connection of port <glyphData>. Formal port size is 16-bit while actual signal size is 8-bit.
+
+Elaborating module <TugOfWar>.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 95: Signal <leftManHPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 96: Signal <leftManHPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 101: Signal <rightManHPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 102: Signal <rightManHPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 107: Signal <knotHPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 108: Signal <knotHPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 124: Signal <leftManVPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 125: Signal <leftManVPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 135: Signal <rightManVPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 136: Signal <rightManVPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 146: Signal <knotVPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 147: Signal <knotVPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 157: Signal <inLeftMan> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 158: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 160: Signal <inRightMan> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 161: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 163: Signal <inKnot> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 164: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:634 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 72: Net <leftManVPos[10]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 73: Net <rightManVPos[10]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v" Line 74: Net <knotVPos[10]> does not have a driver.
+WARNING:HDLCompiler:189 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" Line 122: Size mismatch in connection of port <glyphMemAddress>. Formal port size is 11-bit while actual signal size is 10-bit.
+
+Elaborating module <scoreKeeper>.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\scoreKeeper.v" Line 35: Signal <nextscore> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\scoreKeeper.v" Line 37: Signal <score> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\scoreKeeper.v" Line 37: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\scoreKeeper.v" Line 40: Signal <score> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\scoreKeeper.v" Line 40: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:552 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" Line 96: Input port noteCheckReg[15] is not connected on this instance
+WARNING:HDLCompiler:1127 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 89: Assignment to p1Miss ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 90: Assignment to p2Miss ignored, since the identifier is never used
+
+Elaborating module <LEDdriver>.
+WARNING:HDLCompiler:413 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\LEDdriver.v" Line 34: Result of 22-bit expression is truncated to fit in 21-bit target.
+
+Elaborating module <memory>.
+Reading initialization file \"simpletestbinary.txt\".
+WARNING:HDLCompiler:1670 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\memory.v" Line 58: Signal <the_memory_core_A> in initial block is partially initialized.
+Reading initialization file \"GlyphFileSerial.txt\".
+WARNING:HDLCompiler:189 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 114: Size mismatch in connection of port <din>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 117: Size mismatch in connection of port <addrA>. Formal port size is 14-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 118: Size mismatch in connection of port <doutA>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 118: Assignment to doutA ignored, since the identifier is never used
+
+Elaborating module <midiMemMan>.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\midiMemMan.v" Line 41: Signal <note0en> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\midiMemMan.v" Line 44: Signal <dataMidi> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\midiMemMan.v" Line 47: Signal <note0Full> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:634 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 114: Net <din> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 115: Net <enA> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 116: Net <weA> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" Line 117: Net <addrA> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Game>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v".
+INFO:Xst:3210 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" line 82: Output port <p1Miss> of the instance <VGAModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" line 82: Output port <p2Miss> of the instance <VGAModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" line 82: Output port <p1turn> of the instance <VGAModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" line 82: Output port <p2turn> of the instance <VGAModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\Game.v" line 112: Output port <doutA> of the instance <Memory> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <din> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <enA> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <weA> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <addrA> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <Game> synthesized.
+
+Synthesizing Unit <midiInput>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\midiInput.v".
+    Found 32-bit register for signal <midiClockCounter>.
+    Found 30-bit register for signal <incomingBitBuffer>.
+    Found 6-bit register for signal <bitCount>.
+    Found 1-bit register for signal <noteForMem>.
+    Found 16-bit register for signal <midiNoteOut>.
+    Found 1-bit register for signal <dataIncomingStatus>.
+    Found 32-bit adder for signal <midiClockCounter[31]_GND_2_o_add_3_OUT> created at line 46.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  86 D-type flip-flop(s).
+	inferred 520 Multiplexer(s).
+Unit <midiInput> synthesized.
+
+Synthesizing Unit <pixelClock>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\ipcore_dir\pixelClock.v".
+    Summary:
+	no macro.
+Unit <pixelClock> synthesized.
+
+Synthesizing Unit <VGA_Module>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v".
+WARNING:Xst:2898 - Port 'noteCheckReg', unconnected in block instance 'note0', is tied to GND.
+INFO:Xst:3210 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" line 96: Output port <glyphMemAddress> of the instance <note0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" line 96: Output port <p1turn> of the instance <note0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\VGA_Module.v" line 96: Output port <p2turn> of the instance <note0> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <p1turn> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <p2turn> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 8-bit register for signal <backgroundColor>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <VGA_Module> synthesized.
+
+Synthesizing Unit <vga_timing>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\vga_timing.v".
+        hVisableArea = 640
+        hFrontPorch = 16
+        hBackPorch = 48
+        hSyncPulse = 96
+        vVisableArea = 480
+        vFrontPorch = 10
+        vBackPorch = 29
+        vSyncPulse = 2
+    Found 11-bit register for signal <vCount>.
+    Found 10-bit register for signal <hPixelCount>.
+    Found 1-bit register for signal <hBright>.
+    Found 10-bit register for signal <vPixelCount>.
+    Found 1-bit register for signal <vBright>.
+    Found 11-bit register for signal <hCount>.
+    Found 12-bit subtractor for signal <GND_8_o_GND_8_o_sub_11_OUT> created at line 64.
+    Found 12-bit subtractor for signal <GND_8_o_GND_8_o_sub_16_OUT> created at line 74.
+    Found 11-bit adder for signal <hCount[10]_GND_8_o_add_2_OUT> created at line 50.
+    Found 11-bit adder for signal <vCount[10]_GND_8_o_add_4_OUT> created at line 55.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_12_OUT<9:0>> created at line 64.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_17_OUT<9:0>> created at line 74.
+    Found 11-bit comparator greater for signal <hCount[10]_GND_8_o_LessThan_2_o> created at line 49
+    Found 11-bit comparator lessequal for signal <vCount[10]_GND_8_o_LessThan_4_o> created at line 54
+    Found 11-bit comparator lessequal for signal <n0008> created at line 63
+    Found 11-bit comparator greater for signal <hCount[10]_GND_8_o_LessThan_10_o> created at line 63
+    Found 11-bit comparator lessequal for signal <n0015> created at line 73
+    Found 11-bit comparator greater for signal <vCount[10]_GND_8_o_LessThan_15_o> created at line 73
+    Found 11-bit comparator lessequal for signal <hCount[10]_GND_8_o_LessThan_23_o> created at line 84
+    Found 11-bit comparator lessequal for signal <vCount[10]_GND_8_o_LessThan_24_o> created at line 91
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  44 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+Unit <vga_timing> synthesized.
+
+Synthesizing Unit <bitGen>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\bitGen.v".
+WARNING:Xst:647 - Input <pixelClk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 10-bit comparator lessequal for signal <n0001> created at line 43
+    Found 10-bit comparator lessequal for signal <n0003> created at line 43
+    Found 10-bit comparator lessequal for signal <n0006> created at line 43
+    Found 10-bit comparator lessequal for signal <n0013> created at line 53
+    Found 10-bit comparator lessequal for signal <n0015> created at line 53
+    Found 10-bit comparator lessequal for signal <n0017> created at line 53
+    Found 10-bit comparator lessequal for signal <n0021> created at line 55
+    Found 10-bit comparator lessequal for signal <n0023> created at line 55
+    Found 10-bit comparator lessequal for signal <n0026> created at line 55
+    Found 10-bit comparator lessequal for signal <n0028> created at line 55
+    Found 10-bit comparator lessequal for signal <n0032> created at line 55
+    Found 10-bit comparator lessequal for signal <n0034> created at line 55
+    Found 10-bit comparator lessequal for signal <n0038> created at line 56
+    Found 10-bit comparator lessequal for signal <n0040> created at line 56
+    Found 10-bit comparator lessequal for signal <n0044> created at line 56
+    Found 10-bit comparator lessequal for signal <n0046> created at line 56
+    Found 10-bit comparator lessequal for signal <n0050> created at line 56
+    Found 10-bit comparator lessequal for signal <n0052> created at line 56
+    Found 10-bit comparator lessequal for signal <n0056> created at line 57
+    Found 10-bit comparator lessequal for signal <n0058> created at line 57
+    Found 10-bit comparator lessequal for signal <n0062> created at line 57
+    Found 10-bit comparator lessequal for signal <n0064> created at line 57
+    Found 10-bit comparator lessequal for signal <n0068> created at line 57
+    Found 10-bit comparator lessequal for signal <n0070> created at line 57
+    Found 10-bit comparator lessequal for signal <n0074> created at line 58
+    Found 10-bit comparator lessequal for signal <n0076> created at line 58
+    Found 10-bit comparator lessequal for signal <n0091> created at line 73
+    Found 10-bit comparator lessequal for signal <n0094> created at line 80
+    Found 10-bit comparator greater for signal <vCount[9]_GND_9_o_LessThan_44_o> created at line 80
+    Summary:
+	inferred  29 Comparator(s).
+	inferred  10 Multiplexer(s).
+Unit <bitGen> synthesized.
+
+Synthesizing Unit <mod_10u_5u>.
+    Related source file is "".
+    Found 15-bit adder for signal <GND_10_o_b[4]_add_1_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_10_o_b[4]_add_3_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_10_o_b[4]_add_5_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_10_o_b[4]_add_7_OUT> created at line 0.
+    Found 11-bit adder for signal <GND_10_o_b[4]_add_9_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_b[4]_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_10_o_add_13_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_10_o_add_15_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_10_o_add_17_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_10_o_add_19_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_10_o_add_21_OUT> created at line 0.
+    Found 15-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+	inferred 101 Multiplexer(s).
+Unit <mod_10u_5u> synthesized.
+
+Synthesizing Unit <noteGlyphManager>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v".
+        XOFFSET_NOTE_NOT_IN_PLAY = 32'b00000000000000000000000101000000
+        YOFFSET_NOTE_NOT_IN_PLAY = 32'b00000000000000000000000110101110
+        WHITE_KEY_BORDER_GLYPH_POINTER = 10'b0000000000
+        BLACK_SQUARE_GLYPH = 10'b0001000000
+        WHITE_SQUARE_GLYPH = 10'b0010000000
+        RED_SQUARE_GLYPH = 10'b0011000000
+        BLUE_SQUARE_GLYPH = 10'b0100000000
+WARNING:Xst:647 - Input <midiNoteIn<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <noteMemAddr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <noteCheckReg> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <glyphData<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\noteManager.v" line 685: Output port <FinishPulse> of the instance <timer> is unconnected or connected to loadless signal.
+    Found 11-bit register for signal <noteHPos>.
+    Found 11-bit register for signal <noteVPos>.
+    Found 32-bit register for signal <xOffset>.
+    Found 32-bit register for signal <nextMoveXCounter>.
+    Found 1-bit register for signal <movingRight>.
+    Found 1-bit register for signal <StartTimer>.
+    Found 1-bit register for signal <p1Miss>.
+    Found 1-bit register for signal <p2Miss>.
+    Found 1-bit register for signal <scoreChanged>.
+    Found 32-bit register for signal <moveXCounter>.
+    Found 32-bit subtractor for signal <xOffset[31]_GND_11_o_sub_80_OUT> created at line 373.
+    Found 32-bit subtractor for signal <GND_11_o_xOffset[31]_sub_100_OUT> created at line 395.
+    Found 32-bit subtractor for signal <GND_11_o_yOffset[31]_sub_105_OUT> created at line 407.
+    Found 32-bit adder for signal <nextMoveXCounter[31]_GND_11_o_add_73_OUT> created at line 357.
+    Found 32-bit adder for signal <xOffset[31]_GND_11_o_add_81_OUT> created at line 377.
+    Found 32-bit adder for signal <xOffset[31]_GND_11_o_add_97_OUT> created at line 394.
+    Found 32-bit adder for signal <yOffset[31]_GND_11_o_add_102_OUT> created at line 406.
+    Found 32-bit adder for signal <n0309> created at line 418.
+    Found 32-bit adder for signal <n0190> created at line 418.
+WARNING:Xst:737 - Found 1-bit latch for signal <thisManagersNote<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <thisManagersNote<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <thisManagersNote<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <thisManagersNote<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <thisManagersNote<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <thisManagersNote<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <thisManagersNote<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <thisManagersNote<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextp1Miss>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextp2Miss>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <correctNote>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator lessequal for signal <n0002> created at line 92
+    Found 32-bit comparator lessequal for signal <n0006> created at line 93
+    Found 32-bit comparator greater for signal <moveXCounter[31]_GND_11_o_LessThan_73_o> created at line 356
+    Found 32-bit comparator greater for signal <xOffset[31]_GND_11_o_LessThan_75_o> created at line 362
+    Found 32-bit comparator greater for signal <GND_11_o_xOffset[31]_LessThan_79_o> created at line 371
+    Found 32-bit comparator lessequal for signal <n0064> created at line 394
+    Found 32-bit comparator greater for signal <GND_11_o_xOffset[31]_LessThan_99_o> created at line 394
+    Found 32-bit comparator lessequal for signal <n0071> created at line 406
+    Found 32-bit comparator greater for signal <GND_11_o_yOffset[31]_LessThan_104_o> created at line 406
+    Found 16-bit comparator greater for signal <GND_11_o_noteToCheck[15]_LessThan_168_o> created at line 626
+    Found 16-bit comparator greater for signal <noteToCheck[15]_GND_11_o_LessThan_172_o> created at line 641
+    Found 16-bit comparator equal for signal <noteToCheck[15]_GND_11_o_equal_173_o> created at line 642
+    Found 16-bit comparator equal for signal <noteToCheck[15]_GND_11_o_equal_174_o> created at line 642
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred 123 D-type flip-flop(s).
+	inferred  11 Latch(s).
+	inferred  13 Comparator(s).
+	inferred  15 Multiplexer(s).
+Unit <noteGlyphManager> synthesized.
+
+Synthesizing Unit <HardwareTimer>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\HardwareTimer.v".
+        QuarterSecond = 20000000
+    Found 32-bit register for signal <Counter>.
+    Found 1-bit register for signal <isCounting>.
+    Found 1-bit register for signal <FinishPulse>.
+    Found 32-bit adder for signal <Counter[31]_GND_23_o_add_2_OUT> created at line 46.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+Unit <HardwareTimer> synthesized.
+
+Synthesizing Unit <TugOfWar>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\TugOfWar.v".
+        vPosToStart = 16'b0000000110100100
+        knotTickAmount = 16'b0000000000100000
+        verticalManPos = 16'b0000000110111000
+        ropeColor = 8'b00000000
+        knotYPos = 16'b0000001000000110
+        leftManGlyphAddress = 11'b01001000000
+        rightManGlyphAddress = 11'b00000000000
+        knotGlyphAddress = 11'b01010011010
+WARNING:Xst:647 - Input <glyphData<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2935 - Signal 'leftManVPos', unconnected in block 'TugOfWar', is tied to its initial value (00110111000).
+WARNING:Xst:2935 - Signal 'rightManVPos', unconnected in block 'TugOfWar', is tied to its initial value (00110111000).
+WARNING:Xst:2935 - Signal 'knotVPos', unconnected in block 'TugOfWar', is tied to its initial value (00111000001).
+    Found 11-bit register for signal <rightManHPos>.
+    Found 11-bit register for signal <knotHPos>.
+    Found 11-bit register for signal <leftManHPos>.
+    Found 12-bit subtractor for signal <GND_25_o_GND_25_o_sub_9_OUT> created at line 96.
+    Found 12-bit subtractor for signal <GND_25_o_GND_25_o_sub_13_OUT> created at line 102.
+    Found 12-bit subtractor for signal <GND_25_o_GND_25_o_sub_17_OUT> created at line 108.
+    Found 12-bit subtractor for signal <GND_25_o_GND_25_o_sub_30_OUT> created at line 125.
+    Found 12-bit subtractor for signal <GND_25_o_GND_25_o_sub_40_OUT> created at line 147.
+    Found 12-bit adder for signal <n0222> created at line 95.
+    Found 12-bit adder for signal <n0227> created at line 101.
+    Found 12-bit adder for signal <n0232> created at line 107.
+    Found 32-bit adder for signal <n0269> created at line 158.
+    Found 32-bit adder for signal <n0213> created at line 158.
+    Found 32-bit adder for signal <n0215> created at line 161.
+    Found 32-bit adder for signal <n0277> created at line 164.
+    Found 32-bit adder for signal <n0218> created at line 164.
+    Found 5x32-bit multiplier for signal <n0212> created at line 158.
+    Found 5x32-bit multiplier for signal <n0214> created at line 161.
+    Found 32x33-bit Read Only RAM for signal <_n0431>
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadLeftMan<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadLeftMan<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadLeftMan<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadLeftMan<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadLeftMan<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadLeftMan<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadLeftMan<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadLeftMan<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadLeftMan<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadLeftMan<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadLeftMan<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadLeftMan<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadRightMan<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadRightMan<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadRightMan<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadRightMan<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadRightMan<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadRightMan<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadRightMan<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadRightMan<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadRightMan<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadRightMan<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadRightMan<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadRightMan<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadKnot<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadKnot<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadKnot<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadKnot<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadKnot<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadKnot<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadKnot<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadKnot<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadKnot<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadKnot<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadKnot<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hReadKnot<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <glyphMemAddress<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <glyphMemAddress<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <glyphMemAddress<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <glyphMemAddress<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <glyphMemAddress<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <glyphMemAddress<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <glyphMemAddress<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <glyphMemAddress<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <glyphMemAddress<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <glyphMemAddress<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <glyphMemAddress<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 11-bit comparator greater for signal <leftManHPos[10]_GND_25_o_LessThan_6_o> created at line 95
+    Found 12-bit comparator lessequal for signal <n0011> created at line 95
+    Found 11-bit comparator greater for signal <rightManHPos[10]_GND_25_o_LessThan_10_o> created at line 101
+    Found 12-bit comparator lessequal for signal <n0017> created at line 101
+    Found 11-bit comparator greater for signal <knotHPos[10]_GND_25_o_LessThan_14_o> created at line 107
+    Found 12-bit comparator lessequal for signal <n0023> created at line 107
+    Found 11-bit comparator greater for signal <n0137> created at line 124
+    Found 12-bit comparator greater for signal <GND_25_o_BUS_0004_LessThan_29_o> created at line 124
+    Found 11-bit comparator lessequal for signal <n0151> created at line 146
+    Found 12-bit comparator greater for signal <GND_25_o_BUS_0006_LessThan_39_o> created at line 146
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Multiplier(s).
+	inferred  13 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred  47 Latch(s).
+	inferred  10 Comparator(s).
+	inferred  65 Multiplexer(s).
+Unit <TugOfWar> synthesized.
+
+Synthesizing Unit <scoreKeeper>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\scoreKeeper.v".
+    Found 5-bit register for signal <score>.
+    Found 5-bit adder for signal <score[4]_GND_134_o_add_3_OUT> created at line 37.
+    Found 5-bit subtractor for signal <GND_134_o_GND_134_o_sub_7_OUT<4:0>> created at line 40.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextscore<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextscore<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextscore<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextscore<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextscore<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   5 Latch(s).
+Unit <scoreKeeper> synthesized.
+
+Synthesizing Unit <LEDdriver>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\LEDdriver.v".
+    Found 21-bit register for signal <CLKCounter>.
+    Found 21-bit adder for signal <CLKCounter[20]_GND_140_o_add_2_OUT> created at line 34.
+    Found 16x8-bit Read Only RAM for signal <Digit>
+    Found 21-bit comparator greater for signal <PWR_18_o_CLKCounter[20]_LessThan_2_o> created at line 33
+    Found 21-bit comparator greater for signal <n0004> created at line 38
+    Found 21-bit comparator greater for signal <n0007> created at line 39
+    Found 21-bit comparator greater for signal <n0011> created at line 40
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  16 Multiplexer(s).
+Unit <LEDdriver> synthesized.
+
+Synthesizing Unit <memory>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\memory.v".
+        RAM_WIDTH = 16
+        RAM_ADDR_BITSB = 10
+        RAM_ADDR_BITSA = 14
+    Found 16384x16-bit single-port RAM <Mram_the_memory_core_A> for signal <the_memory_core_A>.
+    Found 1024x16-bit single-port RAM <Mram_the_memory_core_B> for signal <the_memory_core_B>.
+    Found 16-bit register for signal <doutB>.
+    Found 16-bit register for signal <doutA>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <memory> synthesized.
+
+Synthesizing Unit <midiMemMan>.
+    Related source file is "C:\Users\u0376370\Desktop\NEWPROJECTFINAL\latestversion\alu_reg_mem_pc\midiMemMan.v".
+WARNING:Xst:647 - Input <dataMidi<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <resetNoteForMem>.
+WARNING:Xst:737 - Found 1-bit latch for signal <note0en>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Latch(s).
+Unit <midiMemMan> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 1024x16-bit single-port RAM                           : 1
+ 16384x16-bit single-port RAM                          : 1
+ 16x8-bit single-port Read Only RAM                    : 1
+ 32x33-bit single-port Read Only RAM                   : 1
+# Multipliers                                          : 2
+ 32x5-bit multiplier                                   : 2
+# Adders/Subtractors                                   : 43
+ 10-bit adder                                          : 6
+ 10-bit subtractor                                     : 2
+ 11-bit adder                                          : 3
+ 12-bit adder                                          : 4
+ 12-bit subtractor                                     : 7
+ 13-bit adder                                          : 1
+ 14-bit adder                                          : 1
+ 15-bit adder                                          : 1
+ 21-bit adder                                          : 1
+ 32-bit adder                                          : 13
+ 32-bit subtractor                                     : 3
+ 5-bit addsub                                          : 1
+# Registers                                            : 32
+ 1-bit register                                        : 12
+ 10-bit register                                       : 2
+ 11-bit register                                       : 4
+ 16-bit register                                       : 3
+ 21-bit register                                       : 1
+ 30-bit register                                       : 1
+ 32-bit register                                       : 5
+ 33-bit register                                       : 1
+ 5-bit register                                        : 1
+ 6-bit register                                        : 1
+ 8-bit register                                        : 1
+# Latches                                              : 64
+ 1-bit latch                                           : 64
+# Comparators                                          : 75
+ 10-bit comparator greater                             : 1
+ 10-bit comparator lessequal                           : 34
+ 11-bit comparator greater                             : 7
+ 11-bit comparator lessequal                           : 7
+ 12-bit comparator greater                             : 2
+ 12-bit comparator lessequal                           : 4
+ 13-bit comparator lessequal                           : 1
+ 14-bit comparator lessequal                           : 1
+ 15-bit comparator lessequal                           : 1
+ 16-bit comparator equal                               : 2
+ 16-bit comparator greater                             : 2
+ 21-bit comparator greater                             : 4
+ 32-bit comparator greater                             : 5
+ 32-bit comparator lessequal                           : 4
+# Multiplexers                                         : 733
+ 1-bit 2-to-1 multiplexer                              : 650
+ 16-bit 2-to-1 multiplexer                             : 1
+ 21-bit 2-to-1 multiplexer                             : 1
+ 30-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 39
+ 4-bit 2-to-1 multiplexer                              : 3
+ 5-bit 2-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 26
+ 8-bit 2-to-1 multiplexer                              : 11
+# Xors                                                 : 1
+ 6-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <bitCount_5> of sequential type is unconnected in block <MidiInput>.
+WARNING:Xst:2677 - Node <midiNoteOut_15> of sequential type is unconnected in block <MidiInput>.
+WARNING:Xst:2677 - Node <midiNoteOut_14> of sequential type is unconnected in block <MidiInput>.
+WARNING:Xst:2677 - Node <midiNoteOut_13> of sequential type is unconnected in block <MidiInput>.
+WARNING:Xst:2677 - Node <midiNoteOut_12> of sequential type is unconnected in block <MidiInput>.
+WARNING:Xst:2677 - Node <midiNoteOut_11> of sequential type is unconnected in block <MidiInput>.
+WARNING:Xst:2677 - Node <midiNoteOut_10> of sequential type is unconnected in block <MidiInput>.
+WARNING:Xst:2677 - Node <midiNoteOut_9> of sequential type is unconnected in block <MidiInput>.
+WARNING:Xst:2677 - Node <midiNoteOut_8> of sequential type is unconnected in block <MidiInput>.
+WARNING:Xst:2677 - Node <doutB_8> of sequential type is unconnected in block <Memory>.
+WARNING:Xst:2677 - Node <doutB_9> of sequential type is unconnected in block <Memory>.
+WARNING:Xst:2677 - Node <doutB_10> of sequential type is unconnected in block <Memory>.
+WARNING:Xst:2677 - Node <doutB_11> of sequential type is unconnected in block <Memory>.
+WARNING:Xst:2677 - Node <doutB_12> of sequential type is unconnected in block <Memory>.
+WARNING:Xst:2677 - Node <doutB_13> of sequential type is unconnected in block <Memory>.
+WARNING:Xst:2677 - Node <doutB_14> of sequential type is unconnected in block <Memory>.
+WARNING:Xst:2677 - Node <doutB_15> of sequential type is unconnected in block <Memory>.
+
+Synthesizing (advanced) Unit <HardwareTimer>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+Unit <HardwareTimer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <LEDdriver>.
+The following registers are absorbed into counter <CLKCounter>: 1 register on signal <CLKCounter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Digit> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <DigitToShow>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Digit>         |          |
+    -----------------------------------------------------------------------
+Unit <LEDdriver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <TugOfWar>.
+INFO:Xst:3231 - The small RAM <Mram__n0431> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 33-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <score>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <TugOfWar> synthesized (advanced).
+
+Synthesizing (advanced) Unit <memory>.
+INFO:Xst:3226 - The RAM <Mram_the_memory_core_B> will be implemented as a BLOCK RAM, absorbing the following register(s): <doutB>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 16-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     enA            | connected to signal <enB>           | high     |
+    |     weA            | connected to signal <weB>           | high     |
+    |     addrA          | connected to signal <addrB>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <doutB>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <memory> synthesized (advanced).
+
+Synthesizing (advanced) Unit <noteGlyphManager>.
+The following registers are absorbed into counter <nextMoveXCounter>: 1 register on signal <nextMoveXCounter>.
+Unit <noteGlyphManager> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_timing>.
+The following registers are absorbed into counter <hCount>: 1 register on signal <hCount>.
+The following registers are absorbed into counter <vCount>: 1 register on signal <vCount>.
+Unit <vga_timing> synthesized (advanced).
+WARNING:Xst:2677 - Node <bitCount_5> of sequential type is unconnected in block <midiInput>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 1024x16-bit single-port block RAM                     : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
+ 32x33-bit single-port distributed Read Only RAM       : 1
+# Multipliers                                          : 2
+ 32x5-bit multiplier                                   : 2
+# Adders/Subtractors                                   : 38
+ 10-bit adder                                          : 12
+ 10-bit subtractor                                     : 4
+ 11-bit adder                                          : 5
+ 11-bit subtractor                                     : 3
+ 12-bit adder                                          : 3
+ 12-bit subtractor                                     : 2
+ 32-bit adder                                          : 4
+ 32-bit subtractor                                     : 3
+ 5-bit adder                                           : 1
+ 5-bit addsub                                          : 1
+# Counters                                             : 5
+ 11-bit up counter                                     : 2
+ 21-bit up counter                                     : 1
+ 32-bit up counter                                     : 2
+# Registers                                            : 263
+ Flip-Flops                                            : 263
+# Comparators                                          : 75
+ 10-bit comparator greater                             : 1
+ 10-bit comparator lessequal                           : 34
+ 11-bit comparator greater                             : 7
+ 11-bit comparator lessequal                           : 7
+ 12-bit comparator greater                             : 2
+ 12-bit comparator lessequal                           : 4
+ 13-bit comparator lessequal                           : 1
+ 14-bit comparator lessequal                           : 1
+ 15-bit comparator lessequal                           : 1
+ 16-bit comparator equal                               : 2
+ 16-bit comparator greater                             : 2
+ 21-bit comparator greater                             : 4
+ 32-bit comparator greater                             : 5
+ 32-bit comparator lessequal                           : 4
+# Multiplexers                                         : 736
+ 1-bit 2-to-1 multiplexer                              : 655
+ 16-bit 2-to-1 multiplexer                             : 1
+ 30-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 39
+ 4-bit 2-to-1 multiplexer                              : 3
+ 5-bit 2-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 26
+ 8-bit 2-to-1 multiplexer                              : 10
+# Xors                                                 : 1
+ 6-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <doutA_0> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_1> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_2> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_3> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_4> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_5> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_6> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_7> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_8> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_9> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_10> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_11> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_12> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_13> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_14> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <doutA_15> (without init value) has a constant value of 0 in block <memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch leftManHPos_0 hinder the constant cleaning in the block TugOfWar.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <rightManHPos_0> has a constant value of 0 in block <TugOfWar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rightManHPos_1> has a constant value of 0 in block <TugOfWar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rightManHPos_9> has a constant value of 0 in block <TugOfWar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rightManHPos_10> has a constant value of 0 in block <TugOfWar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <knotHPos_0> has a constant value of 0 in block <TugOfWar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <knotHPos_1> has a constant value of 0 in block <TugOfWar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <knotHPos_10> has a constant value of 0 in block <TugOfWar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <leftManHPos_1> has a constant value of 0 in block <TugOfWar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <leftManHPos_10> has a constant value of 0 in block <TugOfWar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Mmult_n02121> of sequential type is unconnected in block <TugOfWar>.
+WARNING:Xst:2677 - Node <Mmult_n02141> of sequential type is unconnected in block <TugOfWar>.
+WARNING:Xst:2677 - Node <moveXCounter_0> of sequential type is unconnected in block <noteGlyphManager>.
+WARNING:Xst:2677 - Node <moveXCounter_1> of sequential type is unconnected in block <noteGlyphManager>.
+WARNING:Xst:2677 - Node <moveXCounter_2> of sequential type is unconnected in block <noteGlyphManager>.
+WARNING:Xst:2677 - Node <moveXCounter_3> of sequential type is unconnected in block <noteGlyphManager>.
+WARNING:Xst:2677 - Node <moveXCounter_4> of sequential type is unconnected in block <noteGlyphManager>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_0> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_1> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_2> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_3> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_4> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_5> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_6> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_7> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_8> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_9> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_10> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_19> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_20> of sequential type is unconnected in block <midiInput>.
+WARNING:Xst:2677 - Node <incomingBitBuffer_29> of sequential type is unconnected in block <midiInput>.
+INFO:Xst:1901 - Instance PixelClock/pll_base_inst in unit PixelClock/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <Game> ...
+
+Optimizing unit <VGA_Module> ...
+
+Optimizing unit <TugOfWar> ...
+
+Optimizing unit <noteGlyphManager> ...
+
+Optimizing unit <HardwareTimer> ...
+
+Optimizing unit <scoreKeeper> ...
+
+Optimizing unit <LEDdriver> ...
+
+Optimizing unit <midiInput> ...
+WARNING:Xst:2677 - Node <VGAModule/tugOfWarModule/glyphMemAddress_10> of sequential type is unconnected in block <Game>.
+WARNING:Xst:2677 - Node <VGAModule/tugOfWarModule/hReadRightMan_10> of sequential type is unconnected in block <Game>.
+WARNING:Xst:2677 - Node <VGAModule/note0/timer/FinishPulse> of sequential type is unconnected in block <Game>.
+WARNING:Xst:2677 - Node <MidiInput/midiNoteOut_8> of sequential type is unconnected in block <Game>.
+WARNING:Xst:2677 - Node <MidiInput/midiNoteOut_9> of sequential type is unconnected in block <Game>.
+WARNING:Xst:2677 - Node <MidiInput/midiNoteOut_10> of sequential type is unconnected in block <Game>.
+WARNING:Xst:2677 - Node <MidiInput/midiNoteOut_11> of sequential type is unconnected in block <Game>.
+WARNING:Xst:2677 - Node <MidiInput/midiNoteOut_12> of sequential type is unconnected in block <Game>.
+WARNING:Xst:2677 - Node <MidiInput/midiNoteOut_13> of sequential type is unconnected in block <Game>.
+WARNING:Xst:2677 - Node <MidiInput/midiNoteOut_14> of sequential type is unconnected in block <Game>.
+WARNING:Xst:2677 - Node <MidiInput/midiNoteOut_15> of sequential type is unconnected in block <Game>.
+WARNING:Xst:1710 - FF/Latch <VGAModule/Timer/vPixelCount_9> (without init value) has a constant value of 0 in block <Game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <VGAModule/note0/noteVPos_10> has a constant value of 0 in block <Game>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <VGAModule/note0/noteVPos_9> has a constant value of 0 in block <Game>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <VGAModule/backgroundColor_7> in Unit <Game> is equivalent to the following FF/Latch, which will be removed : <VGAModule/backgroundColor_0> 
+INFO:Xst:3203 - The FF/Latch <VGAModule/tugOfWarModule/leftManHPos_3> in Unit <Game> is the opposite to the following FF/Latch, which will be removed : <VGAModule/tugOfWarModule/rightManHPos_3> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Game, actual ratio is 15.
+Latch MidiMemoryManager/note0en has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 312
+ Flip-Flops                                            : 312
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Game.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1775
+#      GND                         : 1
+#      INV                         : 56
+#      LUT1                        : 178
+#      LUT2                        : 122
+#      LUT3                        : 74
+#      LUT4                        : 130
+#      LUT5                        : 266
+#      LUT6                        : 269
+#      MUXCY                       : 378
+#      MUXF7                       : 10
+#      VCC                         : 1
+#      XORCY                       : 290
+# FlipFlops/Latches                : 372
+#      FD                          : 115
+#      FD_1                        : 8
+#      FDE                         : 16
+#      FDE_1                       : 8
+#      FDR                         : 56
+#      FDR_1                       : 2
+#      FDRE                        : 77
+#      FDRE_1                      : 28
+#      FDS_1                       : 2
+#      LD                          : 26
+#      LDC                         : 10
+#      LDCE_1                      : 2
+#      LDE_1                       : 21
+#      LDPE_1                      : 1
+# RAMS                             : 1
+#      RAMB16BWER                  : 1
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 28
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      OBUF                        : 25
+# DSPs                             : 2
+#      DSP48A1                     : 2
+# Others                           : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             371  out of  18224     2%  
+ Number of Slice LUTs:                 1095  out of   9112    12%  
+    Number used as Logic:              1095  out of   9112    12%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1137
+   Number with an unused Flip Flop:     766  out of   1137    67%  
+   Number with an unused LUT:            42  out of   1137     3%  
+   Number of fully used LUT-FF pairs:   329  out of   1137    28%  
+   Number of unique control sets:        27
+
+IO Utilization: 
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    232    12%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of DSP48A1s:                      2  out of     32     6%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+-------+
+Clock Signal                                                                                                                             | Clock buffer(FF name)                              | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+-------+
+MidiInput/noteForMem                                                                                                                     | NONE(MidiMemoryManager/note0en)                    | 2     |
+PixelClock/pll_base_inst/CLKOUT0                                                                                                         | BUFG                                               | 229   |
+VGAModule/inWarGlyph(VGAModule/tugOfWarModule/inWarGlyph1:O)                                                                             | NONE(*)(VGAModule/tugOfWarModule/glyphMemAddress_0)| 10    |
+VGAModule/tugOfWarModule/leftManHPos[10]_rightManHPos[10]_OR_208_o(VGAModule/tugOfWarModule/leftManHPos[10]_rightManHPos[10]_OR_208_o1:O)| NONE(*)(VGAModule/tugOfWarModule/hReadLeftMan_0)   | 11    |
+VGAModule/tugOfWarModule/inLeftManX(VGAModule/tugOfWarModule/inLeftManX:O)                                                               | BUFG(*)(VGAModule/tugOfWarModule/hReadKnot_0)      | 21    |
+VGAModule/note0/n0141(VGAModule/note0/n0141<15>:O)                                                                                       | NONE(*)(VGAModule/note0/nextp1Miss)                | 3     |
+VGAModule/note0/GND_11_o_GND_11_o_OR_83_o(VGAModule/note0/GND_11_o_GND_11_o_OR_83_o3:O)                                                  | NONE(*)(VGAModule/note0/thisManagersNote_0)        | 8     |
+VGAModule/scoreModule/GND_134_o_GND_134_o_OR_294_o(VGAModule/scoreModule/GND_134_o_GND_134_o_OR_294_o1:O)                                | NONE(*)(VGAModule/scoreModule/nextscore_1)         | 5     |
+PixelClock/pll_base_inst/CLKOUT1                                                                                                         | BUFG                                               | 76    |
+MidiInput/dataIncomingStatus                                                                                                             | NONE(MidiInput/midiNoteOut_0)                      | 8     |
+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 9.603ns (Maximum Frequency: 104.132MHz)
+   Minimum input arrival time before clock: 4.896ns
+   Maximum output required time after clock: 13.003ns
+   Maximum combinational path delay: 5.407ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PixelClock/pll_base_inst/CLKOUT0'
+  Clock period: 9.603ns (frequency: 104.132MHz)
+  Total number of paths / destination ports: 21729 / 368
+-------------------------------------------------------------------------
+Delay:               4.802ns (Levels of Logic = 3)
+  Source:            VGAModule/note0/noteVPos_1 (FF)
+  Destination:       VGAModule/note0/xOffset_31 (FF)
+  Source Clock:      PixelClock/pll_base_inst/CLKOUT0 rising
+  Destination Clock: PixelClock/pll_base_inst/CLKOUT0 falling
+
+  Data Path: VGAModule/note0/noteVPos_1 to VGAModule/note0/xOffset_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.879  VGAModule/note0/noteVPos_1 (VGAModule/note0/noteVPos_1)
+     LUT5:I2->O            6   0.205   0.744  VGAModule/note0/yOffset[31]_GND_11_o_equal_72_o<31>_SW0 (N55)
+     MUXF7:S->O            2   0.148   0.617  VGAModule/note0/yOffset[31]_GND_11_o_equal_72_o<31>_1_1 (VGAModule/note0/yOffset[31]_GND_11_o_equal_72_o<31>_1)
+     LUT3:I2->O           28   0.205   1.234  VGAModule/note0/_n0375_inv1_cy1_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy (VGAModule/note0/_n0375_inv1)
+     FDRE_1:CE                 0.322          VGAModule/note0/xOffset_0
+    ----------------------------------------
+    Total                      4.802ns (1.327ns logic, 3.475ns route)
+                                       (27.6% logic, 72.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PixelClock/pll_base_inst/CLKOUT1'
+  Clock period: 8.929ns (frequency: 112.000MHz)
+  Total number of paths / destination ports: 38289 / 160
+-------------------------------------------------------------------------
+Delay:               8.929ns (Levels of Logic = 6)
+  Source:            MidiInput/midiClockCounter_0 (FF)
+  Destination:       MidiInput/bitCount_0 (FF)
+  Source Clock:      PixelClock/pll_base_inst/CLKOUT1 rising
+  Destination Clock: PixelClock/pll_base_inst/CLKOUT1 rising
+
+  Data Path: MidiInput/midiClockCounter_0 to MidiInput/bitCount_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            39   0.447   1.392  MidiInput/midiClockCounter_0 (MidiInput/midiClockCounter_0)
+     LUT5:I4->O            1   0.205   0.580  MidiInput/GND_2_o_midiClockCounter[31]_AND_2_o16_SW0 (N98)
+     LUT6:I5->O           79   0.205   1.739  MidiInput/midiClockCounter[31]_GND_2_o_equal_66_o<31>1 (MidiInput/midiClockCounter[31]_GND_2_o_equal_66_o)
+     LUT6:I5->O           13   0.205   1.161  MidiInput/GND_2_o_midiClockCounter[31]_AND_16_o1 (MidiInput/GND_2_o_midiClockCounter[31]_AND_16_o)
+     LUT6:I3->O            1   0.205   0.684  MidiInput/_n106915_SW0 (N91)
+     LUT6:I4->O            3   0.203   0.651  MidiInput/_n106915 (MidiInput/_n10691)
+     LUT5:I4->O            2   0.205   0.616  MidiInput/_n10692 (MidiInput/_n1069)
+     FDRE:R                    0.430          MidiInput/bitCount_0
+    ----------------------------------------
+    Total                      8.929ns (2.105ns logic, 6.824ns route)
+                                       (23.6% logic, 76.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PixelClock/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 38 / 38
+-------------------------------------------------------------------------
+Offset:              4.896ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       VGAModule/note0/xOffset_5 (FF)
+  Destination Clock: PixelClock/pll_base_inst/CLKOUT0 falling
+
+  Data Path: reset to VGAModule/note0/xOffset_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            42   1.222   1.538  reset_IBUF (reset_IBUF)
+     LUT2:I0->O           30   0.203   1.628  VGAModule/note0/Reset_OR_DriverANDClockEnable301 (VGAModule/note0/Reset_OR_DriverANDClockEnable)
+     LUT6:I0->O            1   0.203   0.000  VGAModule/note0/xOffset_5_glue_rst (VGAModule/note0/xOffset_5_glue_rst)
+     FD_1:D                    0.102          VGAModule/note0/xOffset_5
+    ----------------------------------------
+    Total                      4.896ns (1.730ns logic, 3.166ns route)
+                                       (35.3% logic, 64.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'VGAModule/note0/n0141'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.085ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       VGAModule/note0/nextp1Miss (LATCH)
+  Destination Clock: VGAModule/note0/n0141 rising
+
+  Data Path: reset to VGAModule/note0/nextp1Miss
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            42   1.222   1.433  reset_IBUF (reset_IBUF)
+     LDPE_1:PRE                0.430          VGAModule/note0/correctNote
+    ----------------------------------------
+    Total                      3.085ns (1.652ns logic, 1.433ns route)
+                                       (53.5% logic, 46.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'VGAModule/note0/GND_11_o_GND_11_o_OR_83_o'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.085ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       VGAModule/note0/thisManagersNote_0 (LATCH)
+  Destination Clock: VGAModule/note0/GND_11_o_GND_11_o_OR_83_o falling
+
+  Data Path: reset to VGAModule/note0/thisManagersNote_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            42   1.222   1.433  reset_IBUF (reset_IBUF)
+     LDC:CLR                   0.430          VGAModule/note0/thisManagersNote_5
+    ----------------------------------------
+    Total                      3.085ns (1.652ns logic, 1.433ns route)
+                                       (53.5% logic, 46.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PixelClock/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 38 / 38
+-------------------------------------------------------------------------
+Offset:              4.840ns (Levels of Logic = 4)
+  Source:            midiFromKeyboard (PAD)
+  Destination:       MidiInput/incomingBitBuffer_28 (FF)
+  Destination Clock: PixelClock/pll_base_inst/CLKOUT1 rising
+
+  Data Path: midiFromKeyboard to MidiInput/incomingBitBuffer_28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   1.194  midiFromKeyboard_IBUF (midiFromKeyboard_IBUF)
+     LUT6:I0->O            6   0.203   0.992  MidiInput/Mmux_incomingBitBuffer[29]_incomingBitBuffer[29]_mux_126_OUT8321 (MidiInput/Mmux_incomingBitBuffer[29]_incomingBitBuffer[29]_mux_126_OUT832)
+     LUT6:I2->O            2   0.203   0.721  MidiInput/Mmux_incomingBitBuffer[29]_incomingBitBuffer[29]_mux_126_OUT8921 (MidiInput/Mmux_incomingBitBuffer[29]_incomingBitBuffer[29]_mux_126_OUT892)
+     LUT4:I2->O            1   0.203   0.000  MidiInput/Mmux_incomingBitBuffer[29]_incomingBitBuffer[29]_mux_126_OUT591 (MidiInput/incomingBitBuffer[29]_incomingBitBuffer[29]_mux_126_OUT<23>)
+     FDE:D                     0.102          MidiInput/incomingBitBuffer_23
+    ----------------------------------------
+    Total                      4.840ns (1.933ns logic, 2.907ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PixelClock/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 23291 / 18
+-------------------------------------------------------------------------
+Offset:              13.003ns (Levels of Logic = 10)
+  Source:            VGAModule/tugOfWarModule/leftManHPos_3 (FF)
+  Destination:       RGB<4> (PAD)
+  Source Clock:      PixelClock/pll_base_inst/CLKOUT0 rising
+
+  Data Path: VGAModule/tugOfWarModule/leftManHPos_3 to RGB<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              20   0.447   1.197  VGAModule/tugOfWarModule/leftManHPos_3 (VGAModule/tugOfWarModule/leftManHPos_3)
+     LUT3:I1->O            2   0.203   0.845  VGAModule/tugOfWarModule/n0227<5>1 (VGAModule/tugOfWarModule/n0227<5>)
+     LUT4:I1->O            1   0.205   0.000  VGAModule/tugOfWarModule/Mcompar_GND_25_o_BUS_0002_LessThan_12_o_lut<2> (VGAModule/tugOfWarModule/Mcompar_GND_25_o_BUS_0002_LessThan_12_o_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  VGAModule/tugOfWarModule/Mcompar_GND_25_o_BUS_0002_LessThan_12_o_cy<2> (VGAModule/tugOfWarModule/Mcompar_GND_25_o_BUS_0002_LessThan_12_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.827  VGAModule/tugOfWarModule/Mcompar_GND_25_o_BUS_0002_LessThan_12_o_cy<3> (VGAModule/tugOfWarModule/Mcompar_GND_25_o_BUS_0002_LessThan_12_o_cy<3>)
+     LUT6:I2->O           15   0.203   0.982  VGAModule/tugOfWarModule/Mcompar_GND_25_o_BUS_0002_LessThan_12_o_cy<4> (VGAModule/tugOfWarModule/GND_25_o_BUS_0002_LessThan_12_o)
+     LUT4:I3->O           14   0.205   1.186  VGAModule/tugOfWarModule/rightManHPos[10]_GND_25_o_AND_118_o_inv1 (VGAModule/tugOfWarModule/rightManHPos[10]_GND_25_o_AND_118_o_inv)
+     LUT6:I3->O           21   0.205   1.478  VGAModule/tugOfWarModule/inKnot (VGAModule/tugOfWarModule/inKnot)
+     LUT6:I0->O            5   0.203   1.079  VGAModule/BitGen/Mmux_rgb1031 (VGAModule/BitGen/Mmux_rgb103)
+     LUT6:I0->O            1   0.203   0.579  VGAModule/BitGen/Mmux_rgb2 (RGB_0_OBUF)
+     OBUF:I->O                 2.571          RGB_0_OBUF (RGB<0>)
+    ----------------------------------------
+    Total                     13.003ns (4.830ns logic, 8.173ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'MidiInput/noteForMem'
+  Total number of paths / destination ports: 913 / 9
+-------------------------------------------------------------------------
+Offset:              12.125ns (Levels of Logic = 9)
+  Source:            MidiMemoryManager/note0en (LATCH)
+  Destination:       RGB<4> (PAD)
+  Source Clock:      MidiInput/noteForMem falling
+
+  Data Path: MidiMemoryManager/note0en to RGB<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             67   0.498   1.764  MidiMemoryManager/note0en (MidiMemoryManager/note0en)
+     LUT2:I0->O            5   0.203   1.059  VGAModule/note0/Mmux_yOffset91 (VGAModule/note0/Madd_yOffset[31]_GND_11_o_add_102_OUT_lut<7>)
+     LUT6:I1->O            2   0.203   0.845  VGAModule/note0/Madd_yOffset[31]_GND_11_o_add_102_OUT_cy<8>11 (VGAModule/note0/Madd_yOffset[31]_GND_11_o_add_102_OUT_cy<8>)
+     LUT3:I0->O            1   0.205   0.000  VGAModule/note0/Mcompar_GND_11_o_yOffset[31]_LessThan_104_o_lut<4>1 (VGAModule/note0/Mcompar_GND_11_o_yOffset[31]_LessThan_104_o_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  VGAModule/note0/Mcompar_GND_11_o_yOffset[31]_LessThan_104_o_cy<4> (VGAModule/note0/Mcompar_GND_11_o_yOffset[31]_LessThan_104_o_cy<4>)
+     MUXCY:CI->O           1   0.213   0.924  VGAModule/note0/Mcompar_GND_11_o_yOffset[31]_LessThan_104_o_cy<5> (VGAModule/note0/Mcompar_GND_11_o_yOffset[31]_LessThan_104_o_cy<5>)
+     LUT6:I1->O           10   0.203   1.221  VGAModule/note0/inGlyph1 (VGAModule/note0Flag)
+     LUT6:I0->O            5   0.203   1.059  VGAModule/BitGen/Mmux_rgb10111 (VGAModule/BitGen/Mmux_rgb1011)
+     LUT6:I1->O            1   0.203   0.579  VGAModule/BitGen/Mmux_rgb2 (RGB_0_OBUF)
+     OBUF:I->O                 2.571          RGB_0_OBUF (RGB<0>)
+    ----------------------------------------
+    Total                     12.125ns (4.674ns logic, 7.451ns route)
+                                       (38.5% logic, 61.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PixelClock/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 769 / 11
+-------------------------------------------------------------------------
+Offset:              7.911ns (Levels of Logic = 7)
+  Source:            LEDDriver/CLKCounter_10 (FF)
+  Destination:       digit<6> (PAD)
+  Source Clock:      PixelClock/pll_base_inst/CLKOUT1 rising
+
+  Data Path: LEDDriver/CLKCounter_10 to digit<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.447   1.118  LEDDriver/CLKCounter_10 (LEDDriver/CLKCounter_10)
+     LUT5:I0->O            1   0.203   0.000  LEDDriver/Mcompar_n0004_lut<2> (LEDDriver/Mcompar_n0004_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  LEDDriver/Mcompar_n0004_cy<2> (LEDDriver/Mcompar_n0004_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  LEDDriver/Mcompar_n0004_cy<3> (LEDDriver/Mcompar_n0004_cy<3>)
+     MUXCY:CI->O          12   0.213   1.156  LEDDriver/Mcompar_n0004_cy<4> (LEDDriver/Mcompar_n0004_cy<4>)
+     LUT4:I0->O            4   0.203   1.028  LEDDriver/Mmux_DigitToShow<0>11 (LEDDriver/DigitToShow<0>)
+     LUT5:I0->O            1   0.203   0.579  LEDDriver/Mram_Digit61 (digit_6_OBUF)
+     OBUF:I->O                 2.571          digit_6_OBUF (digit<6>)
+    ----------------------------------------
+    Total                      7.911ns (4.031ns logic, 3.880ns route)
+                                       (51.0% logic, 49.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.407ns (Levels of Logic = 3)
+  Source:            midiFromKeyboard (PAD)
+  Destination:       midiRx (PAD)
+
+  Data Path: midiFromKeyboard to midiRx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   0.829  midiFromKeyboard_IBUF (midiFromKeyboard_IBUF)
+     INV:I->O              1   0.206   0.579  MidiInput/rx1_INV_0 (midiRx_OBUF)
+     OBUF:I->O                 2.571          midiRx_OBUF (midiRx)
+    ----------------------------------------
+    Total                      5.407ns (3.999ns logic, 1.408ns route)
+                                       (74.0% logic, 26.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock MidiInput/dataIncomingStatus
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+PixelClock/pll_base_inst/CLKOUT1|         |         |    3.406|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock MidiInput/noteForMem
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+MidiInput/dataIncomingStatus|         |         |    2.578|         |
+VGAModule/note0/n0141       |         |         |    2.367|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PixelClock/pll_base_inst/CLKOUT0
+--------------------------------------------------+---------+---------+---------+---------+
+                                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------+---------+---------+---------+---------+
+MidiInput/noteForMem                              |         |    3.589|    5.975|         |
+PixelClock/pll_base_inst/CLKOUT0                  |    5.322|    3.873|    7.460|         |
+PixelClock/pll_base_inst/CLKOUT1                  |    1.540|         |         |         |
+VGAModule/inWarGlyph                              |         |    1.427|         |         |
+VGAModule/note0/GND_11_o_GND_11_o_OR_83_o         |         |    5.316|         |         |
+VGAModule/note0/n0141                             |    1.684|         |         |         |
+VGAModule/scoreModule/GND_134_o_GND_134_o_OR_294_o|         |    1.179|         |         |
+--------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PixelClock/pll_base_inst/CLKOUT1
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+PixelClock/pll_base_inst/CLKOUT0|    1.456|         |         |         |
+PixelClock/pll_base_inst/CLKOUT1|    8.929|         |         |         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock VGAModule/inWarGlyph
+------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------------------------+---------+---------+---------+---------+
+PixelClock/pll_base_inst/CLKOUT0                                  |         |         |   10.061|         |
+VGAModule/tugOfWarModule/inLeftManX                               |         |         |    3.438|         |
+VGAModule/tugOfWarModule/leftManHPos[10]_rightManHPos[10]_OR_208_o|         |         |    3.616|         |
+------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock VGAModule/note0/GND_11_o_GND_11_o_OR_83_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+MidiInput/dataIncomingStatus|         |         |    1.286|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock VGAModule/note0/n0141
+-----------------------------------------+---------+---------+---------+---------+
+                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------+---------+---------+---------+---------+
+MidiInput/dataIncomingStatus             |         |    5.377|         |         |
+PixelClock/pll_base_inst/CLKOUT0         |    6.260|    5.377|         |         |
+VGAModule/note0/GND_11_o_GND_11_o_OR_83_o|         |    6.826|         |         |
+-----------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock VGAModule/scoreModule/GND_134_o_GND_134_o_OR_294_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+PixelClock/pll_base_inst/CLKOUT0|         |         |    2.503|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock VGAModule/tugOfWarModule/inLeftManX
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+PixelClock/pll_base_inst/CLKOUT0|    7.039|         |         |         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock VGAModule/tugOfWarModule/leftManHPos[10]_rightManHPos[10]_OR_208_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+PixelClock/pll_base_inst/CLKOUT0|         |         |    5.712|         |
+--------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 24.32 secs
+ 
+--> 
+
+Total memory usage is 277952 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  245 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
+

@@ -1,0 +1,64 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "digit[7]" IOSTANDARD = LVCMOS33;
+NET "digit[6]" IOSTANDARD = LVCMOS33;
+NET "digit[5]" IOSTANDARD = LVCMOS33;
+NET "digit[4]" IOSTANDARD = LVCMOS33;
+NET "digit[3]" IOSTANDARD = LVCMOS33;
+NET "digit[2]" IOSTANDARD = LVCMOS33;
+NET "digit[1]" IOSTANDARD = LVCMOS33;
+NET "digit[0]" IOSTANDARD = LVCMOS33;
+NET "RGB[7]" IOSTANDARD = LVCMOS33;
+NET "RGB[6]" IOSTANDARD = LVCMOS33;
+NET "RGB[5]" IOSTANDARD = LVCMOS33;
+NET "RGB[4]" IOSTANDARD = LVCMOS33;
+NET "RGB[3]" IOSTANDARD = LVCMOS33;
+NET "RGB[2]" IOSTANDARD = LVCMOS33;
+NET "RGB[1]" IOSTANDARD = LVCMOS33;
+NET "RGB[0]" IOSTANDARD = LVCMOS33;
+NET "segment[3]" IOSTANDARD = LVCMOS33;
+NET "segment[2]" IOSTANDARD = LVCMOS33;
+NET "segment[1]" IOSTANDARD = LVCMOS33;
+NET "segment[0]" IOSTANDARD = LVCMOS33;
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "HS" IOSTANDARD = LVCMOS33;
+NET "midiFromKeyboard" IOSTANDARD = LVCMOS33;
+NET "midiRx" IOSTANDARD = LVCMOS33;
+NET "reset" IOSTANDARD = LVCMOS33;
+NET "VS" IOSTANDARD = LVCMOS33;
+NET "note0timerOn" IOSTANDARD = LVCMOS33;
+NET "note0enWire" IOSTANDARD = LVCMOS33;
+
+
+# PlanAhead Generated physical constraints 
+
+NET "digit[7]" LOC = M13;
+NET "digit[6]" LOC = T17;
+NET "digit[5]" LOC = T18;
+NET "digit[4]" LOC = U17;
+NET "digit[3]" LOC = U18;
+NET "digit[2]" LOC = M14;
+NET "digit[1]" LOC = N14;
+NET "digit[0]" LOC = L14;
+NET "RGB[7]" LOC = U7;
+NET "RGB[6]" LOC = V7;
+NET "RGB[5]" LOC = N7;
+NET "RGB[4]" LOC = P8;
+NET "RGB[3]" LOC = T6;
+NET "RGB[2]" LOC = V6;
+NET "RGB[1]" LOC = R7;
+NET "RGB[0]" LOC = T7;
+NET "segment[3]" LOC = P17;
+NET "segment[2]" LOC = P18;
+NET "segment[1]" LOC = N15;
+NET "segment[0]" LOC = N16;
+NET "clk" LOC = V10;
+NET "HS" LOC = N6;
+NET "VS" LOC = P7;
+NET "reset" LOC = C9;
+NET "midiRx" LOC = T11;
+NET "note0timerOn" LOC = U16;
+NET "note0enWire" LOC = V16;
+NET "midiFromKeyboard" LOC = G11;
+NET "midiFromKeyboard" CLOCK_DEDICATED_ROUTE = TRUE;

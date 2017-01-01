@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+TugOfWar instance_name (
+    .hPixelCounter(hPixelCounter), 
+    .vPixelCounter(vPixelCounter), 
+    .score(score), 
+    .pixelClk(pixelClk), 
+    .glyphData(glyphData), 
+    .rgb(rgb), 
+    .inWarGlyph(inWarGlyph), 
+    .glyphMemAddress(glyphMemAddress)
+    );
+
+

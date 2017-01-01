@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/u0725062/Desktop/NEWPROJECTFINAL/latestversion/alu_reg_mem_pc/GameSim_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="GameSim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/GameSim/HS" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">HS</obj_property>
+      <obj_property name="ObjectShortName">HS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/VS" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">VS</obj_property>
+      <obj_property name="ObjectShortName">VS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/RGB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RGB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/digit" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">digit[7:0]</obj_property>
+      <obj_property name="ObjectShortName">digit[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/segment" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">segment[3:0]</obj_property>
+      <obj_property name="ObjectShortName">segment[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/midiRx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">midiRx</obj_property>
+      <obj_property name="ObjectShortName">midiRx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/midiFromKeyboard" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">midiFromKeyboard</obj_property>
+      <obj_property name="ObjectShortName">midiFromKeyboard</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/midiNoteWire" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">midiNoteWire[15:0]</obj_property>
+      <obj_property name="ObjectShortName">midiNoteWire[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/noteForMem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">noteForMem</obj_property>
+      <obj_property name="ObjectShortName">noteForMem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/MidiMemoryManager/MidiInterrupt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MidiInterrupt</obj_property>
+      <obj_property name="ObjectShortName">MidiInterrupt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/MidiMemoryManager/note0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">note0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">note0[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/MidiMemoryManager/note0Full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">note0Full</obj_property>
+      <obj_property name="ObjectShortName">note0Full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/MidiMemoryManager/resetNoteForMem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">resetNoteForMem</obj_property>
+      <obj_property name="ObjectShortName">resetNoteForMem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/MidiMemoryManager/dataMidi" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataMidi[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataMidi[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/MidiMemoryManager/note0en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">note0en</obj_property>
+      <obj_property name="ObjectShortName">note0en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/VGAModule/note0/noteStatusBit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">noteStatusBit</obj_property>
+      <obj_property name="ObjectShortName">noteStatusBit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/VGAModule/note0/noteHPos" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">noteHPos[10:0]</obj_property>
+      <obj_property name="ObjectShortName">noteHPos[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/VGAModule/note0/noteVPos" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">noteVPos[10:0]</obj_property>
+      <obj_property name="ObjectShortName">noteVPos[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/VGAModule/note0/xOffset" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">xOffset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">xOffset[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/VGAModule/note0/yOffset" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">yOffset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">yOffset[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/VGAModule/note0/moveXCounter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">moveXCounter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">moveXCounter[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/note0timerOn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">note0timerOn</obj_property>
+      <obj_property name="ObjectShortName">note0timerOn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/VGAModule/note0/moveXCounter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">moveXCounter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">moveXCounter[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/VGAModule/note0/noteStatusBit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">noteStatusBit</obj_property>
+      <obj_property name="ObjectShortName">noteStatusBit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/VGAModule/note0/timerOn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">timerOn</obj_property>
+      <obj_property name="ObjectShortName">timerOn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GameSim/uut/VGAModule/note0/timer/Counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Counter[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/Users/u0725062/Desktop/NEWPROJECTFINAL/latestversion/memory.v -lang verilog -prj alu_reg_mem_pc -o memory.spl -module memory -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 memory.spl C:/Users/u0725062/Desktop/NEWPROJECTFINAL/latestversion/alu_reg_mem_pc/memory.sym 
+vhdtdtfi -lang verilog -prj alu_reg_mem_pc -o C:/Users/u0725062/Desktop/NEWPROJECTFINAL/latestversion/alu_reg_mem_pc/memory.tfi -lib work C:/Users/u0725062/Desktop/NEWPROJECTFINAL/latestversion//memory.v -module memory -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -1,0 +1,66 @@
+// loop through memory addresses 3fff - 3ff4;
+// if the data at the address is 0, update R8's status bit to 0;
+// if the data at the address is non zero:
+//      // if the data at the address is a 1, update p1 score +1; p2 -1; change data to 0
+//      // if the data at the address is a 2, update p2 score +1; p1 -1; change data to 0
+//      // if the data bit is a any other note, update the status bit to 1;
+
+//p1 score stored in r11, p2 score stored in r12.\
+
+.MAIN
+.INITIALIZE
+ANDI 0 R0
+SUBI 1 R0
+LSH -1 R0
+LSH -1 R0
+ANDI 1 R3
+AND R15 R4
+SUBI 1 R4
+LSH 1 R4
+
+.CHECKADDRESSZERO
+LOAD R1 R0
+ANDI 0 R2
+JCOND DATAISZERO R1 R2 EQ
+ADDI 1 R2
+JCOND DATAISONE R1 R2 EQ
+ADDI 1 R2
+JCOND DATAISTWO R1 R2 EQ
+
+.DATACHECKED
+.DATAISNOTONETWOZERO
+
+
+
+.DATAISZERO
+AND R4 R8
+JCOND DATACHECKED R15 R15 EQ
+//need to decrement
+
+
+.DATAISONE
+ADDI 1 R11
+SUBI 1 R12
+STOR R15 R0
+//need to decrement
+JCOND DATACHECKED R15 R15 EQ
+
+.DATAISTWO
+ADDI 1 R12
+SUBI 1 R11
+STOR R15 R0
+//decrement
+JCOND DATACHECKED R15 R15 EQ
+
+
+.SETSTAT0
+ORI 1 R8
+
+
+.SETSTAT1
+ORI 2 R8
+
+.SETSTAT2
+ORI 4 R8
+
+.EXIT

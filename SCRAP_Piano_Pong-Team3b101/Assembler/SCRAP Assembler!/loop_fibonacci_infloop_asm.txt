@@ -1,0 +1,29 @@
+addi 1 r1
+
+add r1 r2
+
+add r2 r3
+add r1 r3
+
+add r3 r4
+add r2 r4
+
+add r4 r5
+add r3 r5
+
+add r5 r6
+add r4 r6
+
+add r5 r7
+add r6 r7
+
+
+.main
+mov r8 r0
+
+.loop0
+addi -1 r10
+jcond loop0 r10 r15 ne
+
+.loop1
+jcond loop1 r15 r15 eq

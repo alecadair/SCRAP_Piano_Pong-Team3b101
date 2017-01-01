@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj alu_reg_mem_pc -o C:/Users/u0725062/Desktop/LATESTVERSION/latestversion/alu_reg_mem_pc/HardwareTimer.tfi -lib work C:/Users/u0725062/Downloads//HardwareTimer.v -module HardwareTimer -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

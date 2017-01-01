@@ -1,0 +1,29 @@
+Command line:
+   HardwareTimer_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56249
+
+Wed Dec 09 20:27:35 2015
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 667.423 Meg
+
+ Total Signals          : 15
+ Total Nets             : 17
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 163
+Total Line Count : 29
+
+ Total Simulation Time: 0.0468 sec
+
+ Current Memory Usage: 981.996 Meg
+
+Wed Dec 09 20:28:07 2015
+

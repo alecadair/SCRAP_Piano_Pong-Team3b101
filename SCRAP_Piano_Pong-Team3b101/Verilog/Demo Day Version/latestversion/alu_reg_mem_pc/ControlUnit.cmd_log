@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/u0376370/Desktop/alu_reg_mem_pc_control/alu_reg_mem_pc/ControlUnit.v -lang verilog -prj alu_reg_mem_pc -o ControlUnit.spl -module ControlUnit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 ControlUnit.spl C:/Users/u0376370/Desktop/alu_reg_mem_pc_control/alu_reg_mem_pc/ControlUnit.sym 

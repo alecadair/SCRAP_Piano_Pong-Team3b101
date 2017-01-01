@@ -1,0 +1,121 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Game.twx Game.ncd -o Game.twr Game.pcf -ucf Game.ucf
+
+Design file:              Game.ncd
+Physical constraint file: Game.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+----------------+------------+------------+------------+------------+------------------+--------+
+                |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source          | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+----------------+------------+------------+------------+------------+------------------+--------+
+midiFromKeyboard|    5.794(R)|      SLOW  |   -1.980(R)|      FAST  |normalClock       |   0.000|
+----------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+HS          |         7.519(R)|      SLOW  |         4.486(R)|      FAST  |pixelClock        |   0.000|
+RGB<0>      |        16.228(R)|      SLOW  |         5.025(R)|      FAST  |pixelClock        |   0.000|
+            |        16.204(F)|      SLOW  |         6.390(F)|      FAST  |pixelClock        |   0.000|
+RGB<1>      |        15.359(R)|      SLOW  |         4.909(R)|      FAST  |pixelClock        |   0.000|
+            |        15.112(F)|      SLOW  |         5.455(F)|      FAST  |pixelClock        |   0.000|
+RGB<2>      |        15.115(R)|      SLOW  |         4.930(R)|      FAST  |pixelClock        |   0.000|
+            |        14.964(F)|      SLOW  |         5.189(F)|      FAST  |pixelClock        |   0.000|
+RGB<3>      |        15.170(R)|      SLOW  |         4.908(R)|      FAST  |pixelClock        |   0.000|
+            |        14.947(F)|      SLOW  |         5.443(F)|      FAST  |pixelClock        |   0.000|
+RGB<4>      |        15.420(R)|      SLOW  |         5.091(R)|      FAST  |pixelClock        |   0.000|
+            |        15.249(F)|      SLOW  |         5.422(F)|      FAST  |pixelClock        |   0.000|
+RGB<5>      |        17.494(R)|      SLOW  |         5.690(R)|      FAST  |pixelClock        |   0.000|
+            |        15.289(F)|      SLOW  |         5.690(F)|      FAST  |pixelClock        |   0.000|
+RGB<6>      |        17.254(R)|      SLOW  |         5.727(R)|      FAST  |pixelClock        |   0.000|
+            |        15.506(F)|      SLOW  |         5.467(F)|      FAST  |pixelClock        |   0.000|
+RGB<7>      |        17.358(R)|      SLOW  |         5.662(R)|      FAST  |pixelClock        |   0.000|
+            |        15.165(F)|      SLOW  |         5.632(F)|      FAST  |pixelClock        |   0.000|
+VS          |         7.660(R)|      SLOW  |         4.107(R)|      FAST  |pixelClock        |   0.000|
+digit<0>    |         9.513(R)|      SLOW  |         5.073(R)|      FAST  |normalClock       |   0.000|
+            |         8.162(R)|      SLOW  |         4.830(R)|      FAST  |pixelClock        |   0.000|
+digit<1>    |        10.176(R)|      SLOW  |         5.061(R)|      FAST  |normalClock       |   0.000|
+            |         8.914(R)|      SLOW  |         4.793(R)|      FAST  |pixelClock        |   0.000|
+digit<2>    |        10.005(R)|      SLOW  |         4.990(R)|      FAST  |normalClock       |   0.000|
+            |         8.743(R)|      SLOW  |         4.722(R)|      FAST  |pixelClock        |   0.000|
+digit<3>    |         9.898(R)|      SLOW  |         5.080(R)|      FAST  |normalClock       |   0.000|
+            |         8.636(R)|      SLOW  |         4.618(R)|      FAST  |pixelClock        |   0.000|
+digit<4>    |         9.157(R)|      SLOW  |         4.853(R)|      FAST  |normalClock       |   0.000|
+            |         8.030(R)|      SLOW  |         4.734(R)|      FAST  |pixelClock        |   0.000|
+digit<5>    |         9.064(R)|      SLOW  |         4.795(R)|      FAST  |normalClock       |   0.000|
+            |         7.713(R)|      SLOW  |         4.552(R)|      FAST  |pixelClock        |   0.000|
+digit<6>    |         9.620(R)|      SLOW  |         4.891(R)|      FAST  |normalClock       |   0.000|
+            |         8.358(R)|      SLOW  |         4.429(R)|      FAST  |pixelClock        |   0.000|
+note0timerOn|         7.968(R)|      SLOW  |         4.930(R)|      FAST  |pixelClock        |   0.000|
+segment<0>  |         8.603(R)|      SLOW  |         4.503(R)|      FAST  |normalClock       |   0.000|
+segment<1>  |         9.186(R)|      SLOW  |         4.721(R)|      FAST  |normalClock       |   0.000|
+segment<2>  |         8.658(R)|      SLOW  |         4.456(R)|      FAST  |normalClock       |   0.000|
+segment<3>  |         8.671(R)|      SLOW  |         4.240(R)|      FAST  |normalClock       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.479|    3.421|    4.815|    8.557|
+reset          |    7.057|   11.402|    6.538|    6.538|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+reset          |         |         |   -0.624|   -0.624|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+----------------+---------------+---------+
+Source Pad      |Destination Pad|  Delay  |
+----------------+---------------+---------+
+midiFromKeyboard|midiRx         |   10.562|
+----------------+---------------+---------+
+
+
+Analysis completed Fri Dec 11 11:15:08 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 238 MB
+
+
+

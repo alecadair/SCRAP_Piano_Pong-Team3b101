@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/u0376370/Desktop/alu_reg_mem_pc_control/alu_reg_mem_pc/controller_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="controller_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/controller_test/digit" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">digit[0:7]</obj_property>
+      <obj_property name="ObjectShortName">digit[0:7]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/segment" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">segment[0:3]</obj_property>
+      <obj_property name="ObjectShortName">segment[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/bufEnA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bufEnA[4:0]</obj_property>
+      <obj_property name="ObjectShortName">bufEnA[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/bufEnB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bufEnB[4:0]</obj_property>
+      <obj_property name="ObjectShortName">bufEnB[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/busA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">busA[15:0]</obj_property>
+      <obj_property name="ObjectShortName">busA[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/busB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">busB[15:0]</obj_property>
+      <obj_property name="ObjectShortName">busB[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/aluResult" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluResult[15:0]</obj_property>
+      <obj_property name="ObjectShortName">aluResult[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/aluOp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluOp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">aluOp[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/controller/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/controller/nextState" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">nextState[3:0]</obj_property>
+      <obj_property name="ObjectShortName">nextState[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/controller/risc_15_12" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">risc_15_12[3:0]</obj_property>
+      <obj_property name="ObjectShortName">risc_15_12[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/controller/risc_11_8" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">risc_11_8[3:0]</obj_property>
+      <obj_property name="ObjectShortName">risc_11_8[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/controller/risc_7_4" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">risc_7_4[3:0]</obj_property>
+      <obj_property name="ObjectShortName">risc_7_4[3:0]</obj_property>
+      <obj_property name="label">risc_7_4[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/controller/risc_3_0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">risc_3_0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">risc_3_0[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/controller/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[15:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/controller/regEn" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regEn[4:0]</obj_property>
+      <obj_property name="ObjectShortName">regEn[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/regBank/DataIn" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataIn[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataIn[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/regBank/DataOut0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataOut0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut0[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/regBank/DataOut1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataOut1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut1[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/regBank/DataOut2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataOut2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut2[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/regBank/DataOut3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataOut3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut3[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/regBank/DataOut4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataOut4[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut4[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/regBank/DataOut5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataOut5[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut5[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/regBank/DataOut6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataOut6[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut6[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/regBank/DataOut14" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataOut14[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut14[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/alu_reg_0/regBank/DataOut15" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataOut15[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut15[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/controller/immEn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">immEn</obj_property>
+      <obj_property name="ObjectShortName">immEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/controller/imm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">imm[15:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/controller/PCen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PCen</obj_property>
+      <obj_property name="ObjectShortName">PCen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_test/uut/alu_reg_mem_unit/PCOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCOut[9:0]</obj_property>
+      <obj_property name="ObjectShortName">PCOut[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

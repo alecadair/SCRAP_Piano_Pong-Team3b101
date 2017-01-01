@@ -1,0 +1,14 @@
+[Inputs]
+clk
+reset
+[Outputs]
+hs
+vs
+=digit[7:0]=
+=segment[3:0]=
+=sevenSegInput[15:0]=
+=rgb[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel controller_alu_reg_mem_pc
+

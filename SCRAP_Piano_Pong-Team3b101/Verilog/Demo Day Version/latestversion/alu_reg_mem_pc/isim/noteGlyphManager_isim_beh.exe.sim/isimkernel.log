@@ -1,0 +1,29 @@
+Command line:
+   noteGlyphManager_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56241
+
+Wed Dec 09 20:17:25 2015
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 667.46 Meg
+
+ Total Signals          : 28
+ Total Nets             : 123
+ Total Signal Drivers   : 14
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 24
+ Total Traceable Variables  : 48
+ Total Scalar Nets and Variables : 631
+Total Line Count : 269
+
+ Total Simulation Time: 0.078 sec
+
+ Current Memory Usage: 667.46 Meg
+
+Wed Dec 09 20:17:30 2015
+

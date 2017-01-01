@@ -1,0 +1,11 @@
+[Inputs]
+midiIn
+clk
+[Outputs]
+rx
+dataIncomingStatus
+=bytesToSevenSeg[0:15]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel midiInput
+

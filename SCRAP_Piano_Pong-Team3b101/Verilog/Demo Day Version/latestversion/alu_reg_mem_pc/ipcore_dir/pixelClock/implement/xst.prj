@@ -1,0 +1,2 @@
+verilog work ../../pixelClock.v
+verilog work ../example_design/pixelClock_exdes.v

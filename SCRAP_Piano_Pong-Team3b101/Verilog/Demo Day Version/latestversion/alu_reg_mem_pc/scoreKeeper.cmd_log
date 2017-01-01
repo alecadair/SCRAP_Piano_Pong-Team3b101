@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj alu_reg_mem_pc -o C:/Users/u0376370/Desktop/NEWPROJECTFINAL/latestversion/alu_reg_mem_pc/scoreKeeper.tfi -lib work C:/Users/u0376370/Desktop/NEWPROJECTFINAL/latestversion/alu_reg_mem_pc//scoreKeeper.v -module scoreKeeper -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
